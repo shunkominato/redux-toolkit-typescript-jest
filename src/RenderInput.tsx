@@ -6,6 +6,7 @@ const RenderInput = () => {
   const updateValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value)
   }
+  
   return (
     <div>
       <input
