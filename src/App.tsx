@@ -2,13 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+// import Render from './Render';
+import RenderInput from './RenderInput';
 
 function App() {
+  const output = (text: string) => {
+    console.log(text);
+  };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
+        <RenderInput aa="s" output={output} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

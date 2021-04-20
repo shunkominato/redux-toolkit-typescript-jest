@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Render = () => {
   return (
@@ -8,9 +8,9 @@ const Render = () => {
       <button>click1</button>
       <button>click1</button>
       <p>udemy</p>
-      <span data-testid='copyright'>@react</span>
+      <span data-testid="copyright">@react</span>
     </div>
-  )
-}
+  );
+};
 
-export default Render
+export default Render;
