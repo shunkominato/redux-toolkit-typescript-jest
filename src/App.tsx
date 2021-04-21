@@ -4,17 +4,41 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 // import Render from './Render';
 import RenderInput from './RenderInput';
+import List from './List';
 
 function App() {
   const output = (text: string) => {
     console.log(text);
   };
+
+  const data = [
+    {
+      id: '1',
+      name: 'react',
+    },
+    {
+      id: '2',
+      name: 'vue',
+    },
+    {
+      id: '3',
+      name: 'node',
+    },
+  ];
+
+  const noData: [] = [];
+
+  console.log(data);
+  console.log(noData);
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <RenderInput aa="s" output={output} />
+        {/* <List frame={data} /> */}
+        <List frame={noData} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
