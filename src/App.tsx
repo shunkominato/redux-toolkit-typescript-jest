@@ -5,6 +5,8 @@ import './App.css';
 // import Render from './Render';
 import RenderInput from './RenderInput';
 import List from './List';
+// import costumCounter from './features/costumCounter/CostumCounter';
+import CostumCounter from './features/costumCounter/CostumCounter';
 
 function App() {
   const output = (text: string) => {
@@ -37,8 +39,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <RenderInput aa="s" output={output} />
-        {/* <List frame={data} /> */}
-        <List frame={noData} />
+        <List frame={data} />
+        {/* <List frame={noData} /> */}
+        <CostumCounter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

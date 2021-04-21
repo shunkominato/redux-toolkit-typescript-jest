@@ -2,7 +2,7 @@ import reducer, {
   increment,
   incrementByAmount,
   CounterState,
-} from '../features/costumCounter/costumCounterSlice'
+} from '../features/costumCounter/costumCounterSlice';
 
 describe('toolkit', () => {
   describe('reducer', () => {

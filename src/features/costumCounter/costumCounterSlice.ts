@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { RootState, AppThunk } from '../../app/store';
+import { RootState } from '../../app/store';
 // import { fetchCount } from './counterAPI';
 
 const sleep = (msec: any): void => {
