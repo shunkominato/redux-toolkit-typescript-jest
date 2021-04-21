@@ -16,10 +16,15 @@ const CostumCounter: React.FC = () => {
     <div>
       <h3>Redux Integration Test</h3>
       <div>
-        <button onClick={() => dispatch(increment())}>+</button>
+        <button onClick={() => dispatch(increment())} data-testid="one">
+          +
+        </button>
         <span data-testid="count-value">{count.value}</span>
         <button onClick={() => dispatch(decrement())}>-</button>
-        <button onClick={() => dispatch(incrementByAmount(number | 0))}>
+        <button
+          onClick={() => dispatch(incrementByAmount(number | 0))}
+          data-testid="two"
+        >
           IncrementByAmount
         </button>
         <input
@@ -27,6 +32,7 @@ const CostumCounter: React.FC = () => {
           placeholder="Enter"
           value={number}
           onChange={(e) => setNumber(Number(e.target.value))}
+          data-testid="tth"
         />
       </div>
     </div>
