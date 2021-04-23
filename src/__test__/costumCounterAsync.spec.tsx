@@ -37,9 +37,9 @@ describe('toolkit', () => {
       </Provider>
     );
 
-    expect(screen.queryByRole("heading")).toBeNull();
-    await userEvent.click(screen.getByText("FetchJSON"));
-    expect(await screen.findByText("bre")).toBeInTheDocument();
+    expect(screen.queryByRole('heading')).toBeNull();
+    await userEvent.click(screen.getByText('FetchJSON'));
+    expect(await screen.findByText('bre')).toBeInTheDocument();
     // expect(await screen.getByTestId('name')).toHaveTextContent('bre');
   });
 });

@@ -8,6 +8,7 @@ import List from './List';
 // import costumCounter from './features/costumCounter/CostumCounter';
 import CostumCounter from './features/costumCounter/CostumCounter';
 import CostumCounterAsync from './features/costumCounter/CostumCounterAsync';
+import CustomHooks from './CustomHooks';
 
 function App() {
   const output = (text: string) => {
@@ -44,6 +45,7 @@ function App() {
         {/* <List frame={noData} /> */}
         <CostumCounter />
         <CostumCounterAsync />
+        <CustomHooks />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
