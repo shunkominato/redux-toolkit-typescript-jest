@@ -13,5 +13,4 @@ describe("useCounter custom Hook", () => {
     });
     expect(result.current.count).toBe(4);
   });
-
 });
